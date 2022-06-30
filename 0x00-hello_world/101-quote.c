@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Using printf to print a string to stdout
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	fprintf(stderr, "%s\n", "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 60);
 	return (0);
 }
