@@ -3,7 +3,11 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - condition based on random number sign
+ *
+ * Return: 0 always
+ */
 int main(void)
 {
 	int n;
@@ -17,7 +21,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero\n", n);	
+		printf("%d is zero\n", n);
 	}
 	else
 	{
