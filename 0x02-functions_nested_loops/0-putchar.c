@@ -2,9 +2,10 @@
 
 /**
  * Printing _putchar
+ *
  * Return: 0 for success
  */
-int main()
+int main(void)
 {
 	int i;
 	char  word[] = {95, 112, 117, 116, 99, 104, 97, 114, 10};
