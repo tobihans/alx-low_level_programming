@@ -21,7 +21,11 @@ void print_to_98(int n)
 			_putchar('0' + (abs / 10));
 
 		_putchar('0' + (abs % 10));
-		_putchar(44);
-		_putchar(32);
+
+		if (i < 98)
+		{
+			_putchar(44);
+			_putchar(32);
+		}
 	}
 }
