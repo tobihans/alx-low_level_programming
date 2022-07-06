@@ -15,7 +15,7 @@ void print_to_98(int n)
 		if (i < 0)
 			_putchar(45);
 
-		abs = i < 0 ? (-1 * i) : i;
+		abs = i < 0 ? (1 * i) : i;
 
 		if (i > 9)
 			_putchar('0' + (abs / 10));
