@@ -10,7 +10,7 @@ void print_to_98(int n)
 {
 	int i, abs;
 
-	for (i = n; i < 99; (98 > n) ? i++ : i--)
+	for (i = n; (98 > n) ? i < 99 : i > 99; (98 > n) ? i++ : i--)
 	{
 		if (i < 0)
 			_putchar(45);
