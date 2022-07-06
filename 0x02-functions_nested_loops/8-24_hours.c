@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
+ * jack_bauer - Prints time
  *
- *
- *
+ * Return: void so nothing
  */
 void jack_bauer(void)
 {
