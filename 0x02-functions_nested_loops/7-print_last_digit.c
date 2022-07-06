@@ -12,4 +12,6 @@ int print_last_digit(int n)
 	int result = n % 10;
 
 	write(1, &result, 4);
+
+	return result;
 }
