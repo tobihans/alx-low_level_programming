@@ -30,7 +30,7 @@ int main(void)
 		}
 
 		if (i < 100)
-			_putchar(32);
+			printf("%c", '\n');
 	}
 	return (0);
 }
