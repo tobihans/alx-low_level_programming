@@ -10,12 +10,9 @@ void puts2(char *str)
 {
 	char *iter;
 
-	for (iter = str; *iter; iter += 2)
+	for (iter = str; *iter && *(iter + 1); iter += 2)
 	{
 		_putchar(*iter);
-
-		if (*(iter + 1) == '\0')
-			break;
 	}
 	_putchar(10);
 }
