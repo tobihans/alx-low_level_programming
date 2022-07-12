@@ -12,4 +12,5 @@ void puts2(char *str)
 
 	for (iter = str; *iter; iter += 2)
 		_putchar(*iter);
+	_putchar(10);
 }
