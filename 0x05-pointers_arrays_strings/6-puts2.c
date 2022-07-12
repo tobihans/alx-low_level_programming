@@ -10,10 +10,12 @@ void puts2(char *str)
 {
 	char *iter;
 
-	for (iter = str; *iter; iter++)
+	for (iter = str; *iter; iter += 2)
 	{
-		_putchar(*iter);
-		iter++;
+		if (*(iter -1))
+			_putchar(*iter);
+		else
+			break;
 	}
 	_putchar(10);
 }
