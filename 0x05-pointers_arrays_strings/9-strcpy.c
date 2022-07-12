@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcpy - Copy a string from a pointer to another one
+ * _strcpy - Copy a string from a pointer to another one
  * @src: THe source string
  * @dest: THe destination buffer
  *
@@ -21,5 +21,5 @@ char *_strcpy(char *dest, char *src)
 
 	*iter2 = '\0';
 
-	return dest;
+	return (dest);
 }
