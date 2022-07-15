@@ -23,5 +23,5 @@ int _strcmp(char *s1, char *s2)
 		iter2++;
 	}
 
-	return (*iter ? 10 : *iter2 ? -1 : 0);
+	return (*iter ? 1 : *iter2 ? -1 : 0);
 }
