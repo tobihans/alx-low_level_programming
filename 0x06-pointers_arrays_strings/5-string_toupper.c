@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - Changes all lowercase chars of a string into upper
- * @sTr: THe string
+ * @str: THe string
  *
  * Return: THe pointer to the string
  */
