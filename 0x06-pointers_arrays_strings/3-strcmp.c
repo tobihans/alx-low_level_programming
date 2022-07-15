@@ -18,9 +18,10 @@ int _strcmp(char *s1, char *s2)
 
 		if (*iter > *iter2)
 			return (1);
+
 		iter++;
 		iter2++;
 	}
 
-	return (0);
+	return (*iter ? 10 : *iter2 ? -1 : 0);
 }
