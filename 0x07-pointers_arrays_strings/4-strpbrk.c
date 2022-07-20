@@ -12,14 +12,14 @@ char *_strpbrk(char *s, char *accept)
 {
 	char *iter, *result;
 
-	for (iter = s; *iter; iter++)
+	for (iter = s; ; iter++)
 	{
 		result = _strchr(accept, *iter);
 		if (result == iter)
 			return (iter);
 
-		/* if (*iter == '\0') */
-		/* 	break; */
+		if (*iter == '\0')
+			break;
 	}
 	return (NULL);
 }
