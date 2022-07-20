@@ -16,12 +16,12 @@ char *_strpbrk(char *s, char *accept)
 	{
 		result = _strchr(accept, *iter);
 		if (result == iter)
-			break;
+			return (iter);
 
 		if (*iter == '\0')
 			break;
 	}
-	return (result);
+	return (NULL);
 }
 
 /**
