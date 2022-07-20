@@ -12,9 +12,14 @@ char *_strchr(char *s, char c)
 {
 	char *iter;
 
-	for (iter = s; *iter; iter++)
+	for (iter = s; ; iter++)
+	{
 		if (*iter == c)
 			return (iter);
+
+		if (*iter == '\0')
+			break;
+	}
 
 	return (NULL);
 }
