@@ -16,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		result = _strchr(accept, *iter);
 	
-		if (*result || *iter == '\0')
+		if (result == iter || *iter == '\0')
 			break;
 	}
 	return (result);
