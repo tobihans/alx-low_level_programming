@@ -11,6 +11,6 @@ char *_strchr(char *s, char c);
 
 char *_strpbrk(char *s, char *accept);
 
-void print_diagsums(int *a, int size);
+void print_diagsums(int **a, int size);
 
 #endif
