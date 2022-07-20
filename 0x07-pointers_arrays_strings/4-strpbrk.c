@@ -12,11 +12,11 @@ char *_strpbrk(char *s, char *accept)
 {
 	char *iter, *result;
 
-	for (iter = s; *iter; iter++)
+	for (iter = s; ; iter++)
 	{
 		result = _strchr(accept, *iter);
 	
-		if (*result)
+		if (*result || *iter == '\0')
 			break;
 	}
 	return (result);
