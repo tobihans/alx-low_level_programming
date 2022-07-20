@@ -15,8 +15,10 @@ char *_strpbrk(char *s, char *accept)
 	for (iter = s; ; iter++)
 	{
 		result = _strchr(accept, *iter);
-	
-		if (result == iter || *iter == '\0')
+		if (result == iter)
+			break;
+
+		if (*iter == '\0')
 			break;
 	}
 	return (result);
