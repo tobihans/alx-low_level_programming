@@ -31,11 +31,16 @@ char *_strpbrk(char *s, char *accept)
  */
 char *_strchr(char *s, char c)
 {
-	char *iter, *result = NULL;
+	char *iter;
 
-	for (iter = s; *iter; iter++)
+	for (iter = s; ; iter++)
+	{
 		if (*iter == c)
-			result = iter;
+			return (iter);
 
-	return (result);
+		if (*iter == '\0')
+			break;
+	}
+
+	return (NULL);
 }
