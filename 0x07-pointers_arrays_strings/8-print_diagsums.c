@@ -13,7 +13,9 @@ void print_diagsums(int *a, int size)
 {
 	int i, j, forward = 0, backward = 0, matrix_size = size * size;
 
-	for (i = 0, j = size - 1; i < matrix_size && j < matrix_size - 1; i += size + 1, j += size - 1)
+	for (i = 0, j = size - 1;
+			i < matrix_size && j < matrix_size - 1;
+			i += size + 1, j += size - 1)
 	{
 		forward += a[i];
 		backward += a[j];
