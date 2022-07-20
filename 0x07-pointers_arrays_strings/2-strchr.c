@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 
 	for (iter = s; *iter; iter++)
 		if (*iter == c)
-			result = iter;
+			result = iter - 1;
 
 	return (result);
 }
