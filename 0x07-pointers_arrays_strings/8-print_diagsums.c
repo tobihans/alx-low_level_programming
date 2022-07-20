@@ -18,5 +18,5 @@ void print_diagsums(int *a, int size)
 		forward += a[i];
 		backward += a[j];
 	}
-	printf("%d %d\n", forward, backward);
+	printf("%d, %d\n", forward, backward);
 }
