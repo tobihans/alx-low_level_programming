@@ -11,13 +11,12 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, diag_1, diag_2;
+	int i, j, forward = 0, backward = 0, matrix_size = size * size;
 
-	for (i = 0, j = size - 1; i < size - 1 && j > 0; i++, j--)
+	for (i = 0, j = size - 1; i < matrix_size && j < matrix_size - 1; i += size + 1, j += size - 1)
 	{
-		printf("%p-", a[i]);
-		diag_1 += a[i];
-		diag_2 += a[i];
+		forward += a[i];
+		backward += a[j];
 	}
-	printf("\n");
+	printf("%d %d\n", forward, backward);
 }
