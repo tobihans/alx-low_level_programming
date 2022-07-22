@@ -4,7 +4,7 @@
 
 /**
  * main - Prints it's executable name and quits
- * 
+ *
  * Return: int
  */
 int main(int argc, char *argv[])
