@@ -6,6 +6,8 @@ int contains_digits_only(char *c);
 
 /**
  * main - Prints it's executable name and quits
+ * @argc: THe number of program arguments
+ * @argv: The program arguments
  *
  * Return: int
  */
