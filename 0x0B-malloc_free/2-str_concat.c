@@ -57,7 +57,15 @@ char *_strdup(char *str)
 	unsigned int size = 0, i;
 
 	if (str == NULL)
-		return (NULL);
+	{
+		dup = (char *) malloc(sizeof(char));
+
+		if (dup == NULL)
+			return (NULL);
+
+		dup[0] = '\0';
+		return (dup);
+	}
 
 	for (iter = str; *iter; iter++)
 		size++;
