@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
 
+char *_strdup(char *str);
+
 /**
  * str_concat - Concatenates two strings
  * @s1: First string
@@ -12,6 +14,12 @@ char *str_concat(char *s1, char *s2)
 {
 	char *iter, *result;
 	unsigned int size1 = 0, size2 = 0, total_size = 0, i;
+
+	if (s1 == NULL)
+		return (_strdup(s2));
+
+	if (s2 == NULL)
+		return (_strdup(s1));
 
 	for (iter = s1; *iter; iter++)
 		size1++;
@@ -35,4 +43,32 @@ char *str_concat(char *s1, char *s2)
 	result[total_size - 1] = '\0';
 
 	return (result);
+}
+
+/**
+ * _strdup - Duplicates a string
+ * @str: THe string to duplicate
+ *
+ * Return: a pointer to a new string or NULL if error happens
+ */
+char *_strdup(char *str)
+{
+	char *iter, *dup;
+	unsigned int size = 0, i;
+
+	if (str == NULL)
+		return (NULL);
+
+	for (iter = str; *iter; iter++)
+		size++;
+
+	dup = (char *) malloc((sizeof(char) * size) + 1);
+
+	if (dup == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		dup[i] = str[i];
+
+	return (dup);
 }
