@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <strings.h>
 #include "main.h"
 
 /**
@@ -19,6 +20,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (p == NULL)
 		return (NULL);
+
+	bzero(p, nmemb * size);
 
 	return (p);
 }
